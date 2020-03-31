@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 
+#include "MyGraphicsScene.h"
+#include "MyBody.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -17,5 +20,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+
+    MyGraphicsScene *_scene;
 };
 #endif // MAINWINDOW_H
