@@ -23,7 +23,7 @@ protected:
     QPainterPath shape() const override;
 
 private:
-    QColor _color{Qt::darkBlue};
+    QColor color{Qt::darkBlue};
 };
 
 #endif // MYBODY_H

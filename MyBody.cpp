@@ -19,7 +19,7 @@ int MyBody::type() const
 
 void MyBody::setColor(const QColor &color)
 {
-    _color=color;
+    this->color=color;
     update();
 }
 
@@ -32,7 +32,7 @@ void MyBody::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QW
 {
     Q_UNUSED(widget)
     const QRect rect=boundingRect().toRect();
-    painter->fillRect(rect,_color);
+    painter->fillRect(rect,color);
     if (option->state & QStyle::State_Selected){
         painter->setPen(QColor(Qt::red));
         painter->drawRect(rect);
